@@ -1,0 +1,87 @@
+:root {
+
+     --accent-color: #A91030;
+     --accent-darker: #791829; 
+	--accent-soft: #fdc1cc;
+
+     --radius-sm: 8px;
+     --radius-md: 12px;
+     --radius-lg: 22px;
+     --radius-round: 999px;
+     --transition-fast: 0.2s ease;
+     --transition-normal: 0.25s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+::selection {
+    color: var(--accent-color);
+    /* background: var(--accent-soft); */
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    /* background: var(--secondary-color); */
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-darker);
+}
+
+/* NAVIGATION */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 70px;
+    background: white;
+    border-bottom: 1px solid black;
+}
+
+/* FOOTER */
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-top: auto;
+    background: linear-gradient(180deg, var(--accent-color) 0, color-mix(in srgb, var(--accent-darker) 65%, black) 100%);
+}
+
+/* RESPONSIVE */
